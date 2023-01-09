@@ -50,3 +50,6 @@ TagManager:
   - name: Foreground2
     uniqueID: 2535455273
     locked: 0
+  - name: ResistorLayer
+    uniqueID: 2753205337
+    locked: 0
