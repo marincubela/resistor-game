@@ -3055,6 +3055,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1081784733}
     m_Modifications:
+    - target: {fileID: 1761276805960386372, guid: 85bf68e06b24a7b4d931305c74b773d6, type: 3}
+      propertyPath: m_EdgeRadius
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2901203196088034488, guid: 85bf68e06b24a7b4d931305c74b773d6, type: 3}
       propertyPath: teleportTo
       value: 
@@ -4193,6 +4197,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1081784733}
     m_Modifications:
+    - target: {fileID: 1761276805960386372, guid: 85bf68e06b24a7b4d931305c74b773d6, type: 3}
+      propertyPath: m_EdgeRadius
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2901203196088034488, guid: 85bf68e06b24a7b4d931305c74b773d6, type: 3}
       propertyPath: teleportTo
       value: 
@@ -4649,6 +4657,10 @@ PrefabInstance:
       propertyPath: teleportTo
       value: 
       objectReference: {fileID: 1151622738}
+    - target: {fileID: 2901203196088034488, guid: 85bf68e06b24a7b4d931305c74b773d6, type: 3}
+      propertyPath: transitionForce
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3059676613463932753, guid: 85bf68e06b24a7b4d931305c74b773d6, type: 3}
       propertyPath: m_RootOrder
       value: 2
