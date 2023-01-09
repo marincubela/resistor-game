@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - ForegroundLayer
   - 
   - 
   - 
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: ResistorLayer
     uniqueID: 2753205337
+    locked: 0
+  - name: PlayerLayer
+    uniqueID: 1267619301
     locked: 0
