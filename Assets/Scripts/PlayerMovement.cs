@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour
         if (isTransporting)
         {
             rb.AddForce(new Vector2(transitionForce, 0));
+            rb.velocity = new Vector2(rb.velocity.x, 0);
             return;
         }
 
