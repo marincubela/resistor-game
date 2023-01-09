@@ -9,6 +9,9 @@ public class PlayerMovement : MonoBehaviour
     private float dirX = 0f;
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private float jumpForce = 14f;
+    [SerializeField] private float transitionForce = 14f;
+
+    [SerializeField] public bool isTransporting = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +22,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isTransporting)
+        {
+            rb.AddForce(new Vector2(0, transitionForce));
+            return;
+        }
+
         dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
 
@@ -26,5 +35,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
+
+
     }
 }

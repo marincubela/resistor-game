@@ -10,7 +10,13 @@ public class CheckpointTrigger : MonoBehaviour
     {
         if (collision.gameObject.name == "Player" && teleportTo != null)
         {
-            collision.gameObject.transform.position = teleportTo.transform.position;
+            var rigidBody = collision.gameObject.GetComponent<Rigidbody2D>();
+            rigidBody.AddForce(new Vector2(0, 7));
+        }
+
+        if (collision.gameObject.name == "Player" && teleportTo == null)
+        {
+            collision.gameObject.transform.position = transform.position;
         }
     }
 }
