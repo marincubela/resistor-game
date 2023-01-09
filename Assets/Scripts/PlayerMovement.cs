@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isTransporting)
         {
-            rb.AddForce(new Vector2(0, transitionForce));
+            rb.AddForce(new Vector2(transitionForce, 0));
             return;
         }
 
