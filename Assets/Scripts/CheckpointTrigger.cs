@@ -5,12 +5,14 @@ using UnityEngine;
 public class CheckpointTrigger : MonoBehaviour
 {
     [SerializeField] private GameObject teleportTo;
+    [SerializeField] private float transitionForce;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name == "Player" && teleportTo != null)
         {
             collision.gameObject.GetComponent<PlayerMovement>().isTransporting = true;
+            collision.gameObject.GetComponent<PlayerMovement>().transitionForce = transitionForce;
         }
 
         if (collision.gameObject.name == "Player" && teleportTo == null)
