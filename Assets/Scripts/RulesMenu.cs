@@ -7,6 +7,6 @@ public class RulesMenu : MonoBehaviour
 {
    public void RulesGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 }
