@@ -860,12 +860,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Cilj igre je odabrati put koji ima najmanji otpor.\nIgra\u010D ima 2 \u017Eivota.\nUkoliko
-    izaberete put s najve\u0107im otporom gubite 2 \u017Eivota te se vra\u0107ate
-    na po\u010Detak levela.\nAko su ponu\u0111ena 3 vodi\u010Da, vodi\u010D sa otporom
-    koji je najmanji je optimalan te ukoliko ga izaberete ne gubite \u017Eivote nego
-    nastavljate igru dalje.\nUkoliko izaberete vodi\u010D koji nije ni najbolji ni
-    najgori gubite 1 \u017Eivot."
+  m_text: "Cilj igre je odabrati vodi\u010D one boje koji ima najmanji otpor.\nUkoliko
+    izaberete put s najve\u0107im otporom gubite odre\u0111en postotak baterije.\nAko
+    postotak baterije spadne na 0% umirete."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
