@@ -951,7 +951,7 @@ GameObject:
   - component: {fileID: 2066641026}
   - component: {fileID: 2066641025}
   - component: {fileID: 2066641024}
-  - component: {fileID: 2066641023}
+  - component: {fileID: 2066641027}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -980,18 +980,6 @@ RectTransform:
   m_AnchoredPosition: {x: -7.936, y: -145}
   m_SizeDelta: {x: 160, y: 31.3798}
   m_Pivot: {x: 0.40481228, y: 0.7538343}
---- !u!114 &2066641023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066641021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c9364e20a09d6743b6b1b87c28458fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2066641024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1036,9 +1024,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2066641023}
-        m_TargetAssemblyTypeName: StartMenu, Assembly-CSharp
-        m_MethodName: StartGame
+      - m_Target: {fileID: 2066641027}
+        m_TargetAssemblyTypeName: StartFromRules, Assembly-CSharp
+        m_MethodName: StartTheGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1086,3 +1074,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066641021}
   m_CullTransparentMesh: 1
+--- !u!114 &2066641027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2066641021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ece2aa577b845941925d319d68ff213, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
