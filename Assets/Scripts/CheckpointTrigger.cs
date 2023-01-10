@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CheckpointTrigger : MonoBehaviour
 {
@@ -28,7 +26,6 @@ public class CheckpointTrigger : MonoBehaviour
             collision.gameObject.transform.position = transform.position;
             var playerRb = collision.gameObject.GetComponent<Rigidbody2D>();
             playerRb.velocity = new Vector2(0, 0);
-            playerRb.position = new Vector2(playerRb.position.x, transform.position.y - 1.4f);
             playerRb.gravityScale = 5;
         }
     }

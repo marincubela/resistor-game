@@ -37,6 +37,9 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
 
-
+        if (rb.position.y <= -50 || rb.position.y >= 50)
+        {
+            this.GetComponent<PlayerLife>().Die();
+        }
     }
 }
